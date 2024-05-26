@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculated Estimation</title>
+    <link rel="stylesheet" href="static/calculation_styles.css">
+</head>
+<body>
+    <h2>Task Details</h2>
+    <table>
+        <tr>
+            <th>Task Name</th>
+            <th>Estimated Effort Hours</th>
+            <th>Confidence Level</th>
+            <th>Estimated Range Hours</th>
+        </tr>
+        <tr>
+            <td>{{ task.task_name }}</td>
+            <td>{{ task.estimated_effort_hours }}</td>
+            <td>{{ task.confidence_level }}</td>
+            <td>{{ task.estimated_range_hours }}</td>
+        </tr>
+    </table>
+    <br><br>
+    <a href="/logout" class="logout-btn">Logout</a>
+    <script src="static/dashboard_scripts.js"></script>
+</body>
+</html>

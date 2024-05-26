@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Effort Estimation Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home_style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Effort Estimation Tool</h1>
+        <p>
+            Welcome to the Effort Estimation Tool! This application provides users with accurate estimates for various tasks based on historical data stored in a MongoDB database.
+            <br><br>
+            Login to submit details for estimation and utilize our simple formula to aggregate historical data and predict new estimates.
+        </p>
+        <div class="buttons">
+            <a href="{{ url_for('register') }}" class="button">Register</a>
+            <a href="{{ url_for('login') }}" class="button">Login</a>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='home_script.js') }}"></script>
+</body>
+</html>
+
